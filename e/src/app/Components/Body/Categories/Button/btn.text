@@ -1,0 +1,31 @@
+//     const [p, setP] = useState(false);
+//   useEffect(() => {
+// setP(true)
+//   }, []);
+//   if(!p) return null;
+  // const ddd= async()=>{
+  //   console.log("working");
+  //   console.log(dd);
+  //   // let pp=cookies().set('name', dd)
+  //   // console.log(pp);
+  //         try {
+  //       const response = await fetch("/Api/AddCart", {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify({
+  //           id:dd
+  //         }),
+  //         cache: "no-cache",
+  //       });
+  //       if (response.ok) {
+  //         const data = await response.json();
+  //         console.log(data);
+  //       } else {
+  //         throw new Error('Failed to submit data');
+  //       }
+  //     } catch (error) {
+  //       console.error('Error submitting data:');
+  //     }
+  // }
