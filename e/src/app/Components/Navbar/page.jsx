@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Logo from "./Avatar/page";
 import Menu from "./Menu/page";
@@ -13,26 +13,25 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Link from "next/link";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
+import { motion, spring } from "framer-motion";
 
 const Page = () => {
   const [p, setP] = useState(false);
   useEffect(() => {
-setP(true)
+    setP(true);
   }, []);
-  if(!p) return null;
+  if (!p) return null;
   return (
-    <div className="  flex justify-between p-3 nav items-center">
-      <div className="itemsnav">
-          <nav className=" space-x-5">
-            <Link href="/">Groceries</Link>
-            <Link href="/">Men</Link>
-            <Link href="/">Women</Link>
-            <Link href="/">Accessories</Link>
+    <div className=" w-screen  flex justify-around p-3 nav items-center">
 
-          </nav>
-      </div>
-      <div className="name flex gap-3 items-center ">
+      <motion.div className="name flex gap-3 items-center "           
+      // data-aos="fade-up"
+      //     data-aos-delay="700"
+      //     data-aos-duration="900"
+          initial={{ opacity: 0, scale: 1 }}
+          animate={{ opacity: 1, scale: [1, 1.4, 1, 1.4, 1, 1.4, 1, 1.4, 1, 1.4, 1, 1.4, 1] }}
+          transition={{ duration: 1.25,type:spring,stiffness:Infinity }}>
         {" "}
         <svg
           className=" text-pink-700 size-6"
@@ -49,9 +48,23 @@ setP(true)
             clip-rule="evenodd"
           ></path>
         </svg>
-        <h1 className={` font-extrabold text-xl text-teal-400 companyname ${kaushanScript.className}`}>FARICON</h1>
-      </div>
+        <h1
+          className={` font-extrabold text-xl text-teal-400 companyname ${kaushanScript.className}`}
+        >
+          FARICON
+        </h1>
+      </motion.div>
+      <div className="itemsnav">
+        <nav
 
+          className=" space-x-5"
+        >
+          <Link href="/">Groceries</Link>
+          <Link href="/">Men</Link>
+          <Link href="/">Women</Link>
+          <Link href="/">Accessories</Link>
+        </nav>
+      </div>
       <div className="end gap-6 flex items-baseline">
         {/* <Toggle />  */}
         <div className="ContactForm items-center">

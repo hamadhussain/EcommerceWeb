@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroImageGrid = () => {
   return (
-<div className=' p-5'>
+<div className=' p-5 box'>
 <div className="c-heroImageGrid bg-gray-400">
       <div className="container bg-gray-200">
         <div className="column"></div>

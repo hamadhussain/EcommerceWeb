@@ -7,14 +7,15 @@ const Page = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, scale: [1, 1.1, 1, 1.1, 1] }}
-        className="flex gap-14  justify-center  relative border-t-2 border-gray-100 "
+        className="flex gap-14  my-3 justify-center  relative border-t-2 border-gray-100 "
         id="contact"
       >
         <div
           className="flex gap-4"
-          data-aos="fade-up"
-          data-aos-delay="700"
-          data-aos-duration="900"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
         >
           <b>
             <h1 className=" text-base uppercase text-gray-700">Contact</h1>

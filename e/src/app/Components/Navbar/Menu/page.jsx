@@ -9,7 +9,7 @@ import {
 import Link from "next/link";
 
 const Page = () => {
-  let navLinks = ["Home", "Categories", "Membership", "About"];
+  let navLinks = ["Home", "Categories", "Membership", "More"];
 
   return (
     <div className=" flex justify-end ">
@@ -19,11 +19,11 @@ const Page = () => {
           <SheetContent className=" bg-black text-white">
             <SheetHeader className="gap-4  py-10">
               <div className=" flex justify-center ">
-                <SheetTitle className="text-3xl"><b>Menu</b></SheetTitle>
+                <SheetTitle className="text-2xl uppercase"><b>Menu</b></SheetTitle>
               </div>
               <hr />
               <SheetDescription>
-                <div className="flex min- flex-col  items-center justify-center gap-16 p-6 text-xl">
+                <div className="flex min- flex-col  items-center justify-center gap-16 p-6 text-base font-sans uppercase text-slate-300">
                   {navLinks.map((items,i) => (
                     <>
                       <Link key={i} href={`/Components/Body/${items}`}>

@@ -635,3 +635,26 @@ h6, p {
 .about{
   text-align: center;
 }
+
+.box{
+  box-shadow: 2px -1px 12px -4px;
+}
+.body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/_next/static/media/Ecommerce1.2957dee4.jpg);
+  animation: myfirst 33s 1009078;
+  height: 364px;
+  background-size: 100% 100%;
+  border-radius: 3px;
+  margin: 29px;
+}
+.formcontact {
+  background-color: #edf1ff;
+  box-shadow: 0px 0px 10px -5px #6c6c6c;
+  padding: 23px;
+  color: #c1acff;
+  margin-top: 53px;
+  margin-bottom: 53px;
+  border-radius: 9px;
+}

@@ -34,7 +34,9 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className="flex justify-center border-y-2 py-48 border-gray-300 ">
+    <div className="flex justify-center box border-y-2 py-48 border-gray-300 "         data-aos="fade-up"
+    data-aos-delay="700"
+    data-aos-duration="900">
       <div>
         <h1 className=" text-3xl textlatest"><span className=" text-5xl">O</span>ur <span>L</span>imited <span>O</span>ffer</h1>
         <p className=" py-10">
