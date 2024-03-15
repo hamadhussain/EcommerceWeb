@@ -60,14 +60,14 @@ const page = ({addToCart, removeFromCart, cartItems }) => {
               <SheetDescription>
                 <div className="flex min- flex-col  items-center justify-center gap-9 p-4">
                 <h2>Cart Items:</h2>
-        <ul className=' flex flex-col  items-end gap-6 '>
+        {/* <ul className=' flex flex-col  items-end gap-6 '>
           {checkitems.map((item, index) => (
             <li key={index} className="text-white space-x-3 gap-10 flex">
               {item}                    <button className='  bg-red-600  text-white px-1'>Delete Item</button>
 
             </li>
           ))}
-        </ul>              
+        </ul>               */}
         {/* <button onClick={() => handleRemove(index)}>Remove</button> */}
 
                     {/* <button className=' bg-red-400 p-2 rounded-lg'>Remove Item</button> */}

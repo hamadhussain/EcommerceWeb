@@ -29,12 +29,13 @@
 
 
 
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Page = () => {
   return (
-    <div className="flex justify-center box border-y-2 py-48 border-gray-300 "         data-aos="fade-up"
+    <div className="flex justify-center relative -top-44  gap-5"         data-aos="fade-up"
     data-aos-delay="700"
     data-aos-duration="900">
       <div>
@@ -47,7 +48,7 @@ const Page = () => {
           <button className="brbtn bg-emerald-200 text-red-400 p-3 hover:bg-emerald-300 font-extrabold uppercase ">Shop Now</button>{" "}
         </Link>
       </div>
-      <div className="imghome "></div>
+      <Image src="/Assets/T-shirt.avif" width={200} height={100} alt="" />
     </div>
   );
 };

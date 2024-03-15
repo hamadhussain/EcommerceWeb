@@ -625,13 +625,7 @@ h6, p {
   background-repeat: no-repeat;
   background-image: url(./Assets/BackgroundFront.jpg);
 }
-.nav {
-  background-color: #000d57;
-  color: #ffffff;
-  /* position: fixed;
-  width: -webkit-fill-available; */
-  box-shadow: 0px 0px 22px -3px grey;
-}
+/*  */
 .about{
   text-align: center;
 }
@@ -657,4 +651,205 @@ h6, p {
   margin-top: 53px;
   margin-bottom: 53px;
   border-radius: 9px;
+}
+
+
+
+
+
+
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 24px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  /* gap: 23px; */
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Default styles */
+/* You may have existing CSS for default styling */
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .w-screen {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .name {
+    margin-bottom: 20px; /* Add some space below the name */
+  }
+
+  .itemsnav {
+    margin-bottom: 20px; /* Add some space below the navigation links */
+  }
+
+  .end {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .end > * {
+    margin-bottom: 10px; /* Add some space between the contact form and basket/menu */
+  }
+}
+
+/* Media query for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Add specific styles for this range if needed */
+}
+
+/* Media query for screens larger than 1023px */
+@media (min-width: 1024px) {
+  /* Add specific styles for larger screens if needed */
+}
+
+/* Default styles */
+/* You may have existing CSS for default styling */
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .flex {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .gap-14 {
+    gap: 0; /* Remove the gap between flex items on smaller screens */
+  }
+
+  .my-3 {
+    margin-top: 10px; /* Adjust top margin */
+    margin-bottom: 10px; /* Adjust bottom margin */
+  }
+
+  .border-t-2 {
+    border-top-width: 1px; /* Adjust border width */
+  }
+  
+  .powered {
+    justify-content: center; /* Center the "Powered By" text */
+    margin-top: 10px; /* Add some space at the top */
+  }
+
+  .flex > * {
+    margin-bottom: 10px; /* Add some space between flex items */
+  }
+}
+
+/* Media query for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Add specific styles for this range if needed */
+}
+
+/* Media query for screens larger than 1023px */
+@media (min-width: 1024px) {
+  /* Add specific styles for larger screens if needed */
+}
+
+/* Default styles */
+/* You may have existing CSS for default styling */
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .flex {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .top-44 {
+    top: 0; /* Remove the top offset on smaller screens */
+  }
+
+  .gap-5 {
+    gap: 0; /* Remove the gap between flex items on smaller screens */
+  }
+
+  .textlatest {
+    text-align: center; /* Center the text */
+  }
+
+  .py-10 {
+    padding-top: 20px; /* Adjust top padding */
+    padding-bottom: 20px; /* Adjust bottom padding */
+  }
+
+  .brbtn {
+    width: 100%; /* Make the button full width */
+  }
+}
+
+/* Media query for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Add specific styles for this range if needed */
+}
+
+/* Media query for screens larger than 1023px */
+@media (min-width: 1024px) {
+  /* Add specific styles for larger screens if needed */
+}
+.head{
+  font-family: '__Kaushan_Script_c813da';
+
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(2, 2, 160); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
 }

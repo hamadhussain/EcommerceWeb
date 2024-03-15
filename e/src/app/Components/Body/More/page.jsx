@@ -25,7 +25,7 @@ const Page = () => {
         <center>
           <div className=" w-60 h-60 flex text-center ">
             {" "}
-            <svg
+            {/* <svg
               className=" text-pink-700"
               viewBox="0 0 15 15"
               fill="none"
@@ -37,7 +37,7 @@ const Page = () => {
                 fill-rule="evenodd"
                 clip-rule="evenodd"
               ></path>
-            </svg>
+            </svg> */}
           </div>
         </center>
       </div>

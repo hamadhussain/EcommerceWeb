@@ -6,6 +6,7 @@ import Toggle from "../Toggle/page";
 import AddCart from "../Body/AddCart/page";
 import { IoPerson } from "react-icons/io5";
 import { kaushanScript } from "../../fonts";
+import Login from "./Login/page";
 import {
   Tooltip,
   TooltipContent,
@@ -17,13 +18,14 @@ import { useState, useEffect } from "react";
 import { motion, spring } from "framer-motion";
 
 const Page = () => {
+  // const { data: session } = useSession()
   const [p, setP] = useState(false);
   useEffect(() => {
     setP(true);
   }, []);
   if (!p) return null;
   return (
-    <div className=" w-screen  flex justify-around p-3 nav items-center">
+    <div className="   flex justify-between p-3 nav items-center">
 
       <motion.div className="name flex gap-3 items-center "           
       // data-aos="fade-up"
@@ -32,7 +34,6 @@ const Page = () => {
           initial={{ opacity: 0, scale: 1 }}
           animate={{ opacity: 1, scale: [1, 1.4, 1, 1.4, 1, 1.4, 1, 1.4, 1, 1.4, 1, 1.4, 1] }}
           transition={{ duration: 1.25,type:spring,stiffness:Infinity }}>
-        {" "}
         <svg
           className=" text-pink-700 size-6"
           width="15"
@@ -54,25 +55,27 @@ const Page = () => {
           FARICON
         </h1>
       </motion.div>
-      <div className="itemsnav">
+      {/* <div className="itemsnav">
         <nav
 
-          className=" space-x-5"
+          className=" space-x-5 "
         >
-          <Link href="/">Groceries</Link>
-          <Link href="/">Men</Link>
-          <Link href="/">Women</Link>
-          <Link href="/">Accessories</Link>
+          <Link href="/" className="hover:text-pink-500 hover:font-extrabold">Groceries</Link>
+          <Link href="/" className="hover:text-pink-500 hover:font-extrabold">Men</Link>
+          <Link href="/" className="hover:text-pink-500 hover:font-extrabold">Women</Link>
+          <Link href="/" className="hover:text-pink-500 hover:font-extrabold">Accessories</Link>
         </nav>
-      </div>
+      </div> */}
       <div className="end gap-6 flex items-baseline">
-        {/* <Toggle />  */}
+        <Login/>
+        {/* <Toggle /> <Link href='/'><button className=" uppercase">Login</button></Link>       */}
+
         <div className="ContactForm items-center">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
                 <Link href="/Components/Body/Categories/ContactForm">
-                  <IoPerson />
+                  <IoPerson className=" hover:text-pink-500 font-extrabold"/>
                 </Link>
               </TooltipTrigger>
               <TooltipContent className="bg-black">
@@ -85,7 +88,7 @@ const Page = () => {
           {" "}
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger>
+              <TooltipTrigger className=" hover:text-pink-500 hover:font-extrabold">
                 {" "}
                 <AddCart />
               </TooltipTrigger>
@@ -99,7 +102,7 @@ const Page = () => {
           {" "}
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger>
+              <TooltipTrigger className=" hover:text-pink-500 hover:font-extrabold">
                 {" "}
                 <Menu />
               </TooltipTrigger>

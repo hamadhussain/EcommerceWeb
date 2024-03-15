@@ -10,7 +10,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className="flex justify-center py-20 ">
+    <div className="flex justify-center py-20  ">
       <Carousel
         opts={{
           align: "start",

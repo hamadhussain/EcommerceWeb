@@ -7,7 +7,7 @@ const Page = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, scale: [1, 1.1, 1, 1.1, 1] }}
-        className="flex gap-14  my-3 justify-center  relative border-t-2 border-gray-100 "
+        className="flex gap-14  my-3 justify-center  relative  "
         id="contact"
       >
         <div

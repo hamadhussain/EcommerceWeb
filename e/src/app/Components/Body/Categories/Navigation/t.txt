@@ -1,0 +1,46 @@
+<div className="container">
+      {/* Clothing Items Section */}
+      <div className="section">
+        <h1>Clothing Items <GiClothes/></h1>
+        <div className="menu-item">
+          <span className="menu-trigger">Men</span>
+          <div className="menu-content">
+            <Link href="/">Men</Link>
+            <Link href="/">Women</Link>
+            <Link href="/">Baby Collection</Link>
+            <Link href="/">Contact</Link>
+          </div>
+        </div>
+        {/* Add other navigation items here */}
+      </div>
+
+      {/* Grocery Section */}
+      <div className="section">
+        <h1>Grocery <FaAppleAlt /></h1>
+        <div className="menu-item">
+          <span className="menu-trigger">Fruits</span>
+          <div className="menu-content">
+            <Link href="/">Fruits</Link>
+            <Link href="/">Vegetables</Link>
+            <Link href="/">Fast Foods</Link>
+            <Link href="/">Contact</Link>
+          </div>
+        </div>
+        {/* Add other navigation items here */}
+      </div>
+
+      {/* Electronics Section */}
+      <div className="section">
+        <h1>Electronics <RiComputerLine /></h1>
+        <div className="menu-item">
+          <span className="menu-trigger">Mobiles</span>
+          <div className="menu-content">
+            <Link href="/">Mobiles</Link>
+            <Link href="/">Laptop</Link>
+            <Link href="/">Computers</Link>
+            <Link href="/">Contact</Link>
+          </div>
+        </div>
+        {/* Add other navigation items here */}
+      </div>
+    </div>
